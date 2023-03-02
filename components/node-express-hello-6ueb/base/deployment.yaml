@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: node-express-hello-6ueb
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:eQZrY-node-express-hello-6ueb
+      - image: quay.io/redhat-appstudio/user-workload@sha256:93cc61d300f1d2003dd48af8b2331eb3eece27c095ef3789f142170d73417b84
         name: my-nodejs
         ports:
         - containerPort: 3001
