@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: node-express-hello-6ueb
+  namespace: burrsitis-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:93cc61d300f1d2003dd48af8b2331eb3eece27c095ef3789f142170d73417b84
+        name: my-nodejs
+        resources: {}
+status: {}
